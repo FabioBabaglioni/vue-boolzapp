@@ -1,22 +1,20 @@
 /* classi colore sfondi */
 .bg_green{
     background-color: green;
-    height: 100%;
-    /* position: absolute;
-    z-index: 10; */
+    height: 96vh;
 }
 
 .bg_pink{
     background-color: pink;
-    height: 100%;
-    /* position: absolute;
-    z-index: 10; */
+    height: 96vh;
 }
 
 /* sfondo  */
 #background_green{
     height: 150px;
     background-color: #009688;
+    /* position: absolute; */
+    z-index: -1;
 }
 
 #background_grey{
@@ -24,16 +22,16 @@
     background-color: #d6dbd7;
 }
 
+#sfondo{
+    margin-top: -96vh;
+}
+
 /* sezione chat */
 
 #container_chat{
     width: 80vw;
-    text-align: center;
     height: 96vh;
-    position: absolute;
-    top: 2vh;
-    left: 10vw;
-
-    /* DEBUG */
-    background-color: red;
+    margin: 0 auto;
+    padding-top: 2vh;
 }
+
