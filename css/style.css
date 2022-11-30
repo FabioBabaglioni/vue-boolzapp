@@ -9,12 +9,12 @@ h1, h2, h3, h4, h5, h6{
 
 
 /* classi colore sfondi */
-.bg_white{
+.preview{
     background-color: #ffffff;
     height: 96vh;
 }
 
-.bg_pink{
+.sidebar{
     height: 96vh;
 }
 
@@ -128,20 +128,34 @@ h1, h2, h3, h4, h5, h6{
     border-bottom: solid 1px lightgrey;
 }
 
-#back_image{
-    background-image: url(../img/mine.jpg);
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-}
-
 #input_message{
     width: 95%;
     font-size: .6rem;
     padding: 8px;
 }
 
-#altezza_div_image{
-    width: calc(100vh - 100px);
+#altezza_image_chat{
+    height: calc(100% - 100px);
+    background-image: url(../img/mine.jpg);
+    background-size: contain;
+    margin: 0 -14px ;
+    padding-top: 30px;
+}
+
+.messaggio{
+    padding: 5px 10px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 30px 10px 30px;
+}
+
+.messaggio_inviato{
+    background-color: #d5f9ba;
+    align-content: flex-end;
+}
+
+.messaggio_ricevuto{
+    background-color: #ffffff;
 }
 
