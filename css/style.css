@@ -15,7 +15,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .bg_pink{
-    background-color: pink;
     height: 96vh;
 }
 
@@ -29,6 +28,10 @@ h1, h2, h3, h4, h5, h6{
 
 .background_white{
     background-color: white;
+}
+
+.background_grey{
+    background-color: #eaeaea;
 }
 
 /* icone */
@@ -66,13 +69,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .small_text{
-    font-size: .5rem;
+    font-size: .6rem;
 }
 
 /* sezione chat */
 
-.utenti{
-    overflow-y: auto;
+.border_utente{
+    border-right: solid 1px lightslategray;
 }
 
 .underline{
@@ -99,19 +102,15 @@ h1, h2, h3, h4, h5, h6{
     height: 50px;
 }
 
-#utente{
-    background-color: #eaeaea;
-}
-
 #altezza_search{
-    height: 40px;
+    height: 45px;
 }
 
 .altezza_big{
     height: 60px;
 }
 
-.Input{
+.input{
     border-radius: 40px;
     border: solid 1px white;
 }
@@ -121,7 +120,28 @@ h1, h2, h3, h4, h5, h6{
     font-size: .8rem;
 }
 
+.chat{
+    overflow-x: auto;
+}
+
 .label_chat{
     border-bottom: solid 1px lightgrey;
+}
+
+#back_image{
+    background-image: url(../img/mine.jpg);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+#input_message{
+    width: 95%;
+    font-size: .6rem;
+    padding: 8px;
+}
+
+#altezza_div_image{
+    width: calc(100vh - 100px);
 }
 
