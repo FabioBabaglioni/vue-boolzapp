@@ -1,12 +1,20 @@
 /* classi colore sfondi */
 .bg_green{
-    background-color: green;
+    background-color: #ffffff;
     height: 96vh;
 }
 
 .bg_pink{
     background-color: pink;
     height: 96vh;
+}
+
+.bg_blue{
+    background-color: #8edafc;
+}
+
+.bg_lightgrey{
+    background-color: #f2f2f2;
 }
 
 /* sfondo  */
@@ -33,5 +41,26 @@
     height: 96vh;
     margin: 0 auto;
     padding-top: 2vh;
+}
+
+.img_avatar{
+    border-radius: 50%;
+    height: 40px;
+}
+
+#name_utente{
+    font-size: 20px;
+}
+
+.altezza{
+    height: 50px;
+}
+
+#utente{
+    background-color: #eaeaea;
+}
+
+#altezza_search{
+    height: 40px;
 }
 

@@ -23,10 +23,56 @@
 
         <!-- contenitore chat -->
         <div id="container_chat">
+
+            <!-- container bootstrap -->
             <div class="container">
+
+                <!-- row genarle per dividere in due il contenitore -->
                 <div class="row">
-                    <div class="col-4 bg_green "></div>
-                    <div class="col-8 bg_pink"></div>
+
+                    <!-- colonna preview chat  -->
+                    <div class="col-4 bg_green utenti">
+
+                        <!-- riga info utente -->
+                        <div class="row altezza">
+                            <div class="col-9" id="utente">
+                                <div class="d-flex align-items-center">
+                                    <img class="img_avatar" src="img/avatar_1.jpg" alt="" class="avatar">
+                                    <h3 id="name_utente">Fabio Babaglioni</h3>
+                                </div>
+                            </div>
+                            <div class="col-3" id="utente">
+                                <div class="d-flex align-items-center justify-content-around">
+                                    <i class="fa-solid fa-circle-notch"></i>
+                                    <i class="fa-solid fa-message"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- riga notifiche -->
+                        <div class="row altezza">
+                            <div class="col bg_blue" id="">
+                                <div class="d-flex">
+                                    <img src="" alt="" class="avatar">
+                                    <h3></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- riga search -->
+                        <div class="row ">
+                            <div class="col bg_lightgrey bg_blue " id="altezza_search">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- colonna chat  -->
+                    <div class="col-8 bg_pink chat"></div>
                 </div>
             </div>
             
