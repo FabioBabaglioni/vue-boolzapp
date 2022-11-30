@@ -13,157 +13,166 @@
 <body>
 
     
+    <div id="app">
 
     <!-- main con all'interno row e col di bootstrap -->
+        <main>
 
-    <main>
-        
-        <!-- header sfondo -->
-        
+            <!-- contenitore chat -->
+            <div id="container_chat">
 
-        <!-- contenitore chat -->
-        <div id="container_chat">
+                <!-- container bootstrap -->
+                <div class="container">
 
-            <!-- container bootstrap -->
-            <div class="container">
+                    <!-- row genarle per dividere in due il contenitore -->
+                    <div class="row">
 
-                <!-- row genarle per dividere in due il contenitore -->
-                <div class="row">
+                        <!-- colonna preview chat sidebar -->
+                        <div class="col-4 preview">
 
-                    <!-- colonna preview chat sidebar -->
-                    <div class="col-4 preview">
-
-                        <!-- riga info utente -->
-                        <div class="row background_grey border_utente">
-                            <!-- img e nome utente -->
-                            <div class="col-9 " id="utente">
-                                <div class="d-flex align-items-center altezza">
-                                    <img class="img_avatar" src="img/avatar_1.jpg" alt="" class="avatar">
-                                    <h3 id="name_utente">Fabio Babaglioni</h3>
-                                </div>
-                            </div>
-
-                            <!-- azioni utente -->
-                            <div class="col-3" id="utente">
-                                <div class="d-flex align-items-center justify-content-around altezza">
-                                    <i class="fa-solid fa-circle-notch icon_color"></i>
-                                    <i class="fa-solid fa-message icon_color"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical icon_color"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- riga notifiche -->
-                        <div class="row">
-                            <div class="col-12 bg_blue" id="">
-                                <div class="d-flex align-items-center altezza_big">
-                                    <i class="fa-solid fa-bell-slash me-3"></i>
-
-                                    <div>
-                                        <div class="medium_text">Ricevi notifiche di nuovi messaggi</div>
-                                        <div class="small_text underline">Attiva notifiche desktop</div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- riga search -->
-                        <div class="row ">
-                            <div class="col-12 bg_lightgrey">
-                                <div class="d-flex align-items-center" id="altezza_search">
-
-                                    <!-- icona search -->
-                                    <i class="fa-solid fa-magnifying-glass icon_color pe-3 ps-1"></i>
-
-                                    <!-- input search -->
-                                    <input type="text" class="input" id="input_prew" placeholder="Cerca o inizia una nuova chat">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- colonna prew chat -->
-                        <div class="row label_chat">
-                            <div class="col-10 ">
-                                <div class="d-flex align-items-center altezza_big">
-                                    <img class="img_avatar" src="img/avatar_2.jpg" alt="" class="avatar">
-                                    <div class="ps-3">
-                                        <div class="medium_text">Michele</div>
-                                        <div class="small_text">Ultimo messaggio inviato</div>
+                            <!-- riga info utente -->
+                            <div class="row background_grey border_utente">
+                                <!-- img e nome utente -->
+                                <div class="col-9 " id="utente">
+                                    <div class="d-flex align-items-center altezza">
+                                        <img class="img_avatar" src="img/avatar_1.jpg" alt="" class="avatar">
+                                        <h3 id="name_utente">Fabio Babaglioni</h3>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-2">
-                                <span class="small_text">12.00</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- colonna chat  -->
-                    <div class="col-8 sidebar">
-                        <div class="row ">
-                            <div class="col-10 background_grey">
-                                <div class="d-flex align-items-center altezza" >
-                                    <img class="img_avatar" src="img/avatar_2.jpg" alt="" class="avatar">
-                                    <div class="ps-3">
-                                        <div class="medium_text">Michele</div>
-                                        <div class="small_text">Ultimo oggi alle 12.00</div>
+                                <!-- azioni utente -->
+                                <div class="col-3" id="utente">
+                                    <div class="d-flex align-items-center justify-content-around altezza">
+                                        <i class="fa-solid fa-circle-notch icon_color"></i>
+                                        <i class="fa-solid fa-message icon_color"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical icon_color"></i>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-2 background_grey">
-                                <div class="d-flex align-items-center altezza justify-content-around " >
-                                    <i class="fa-solid fa-magnifying-glass icon_color"></i>
-                                    <i class="fa-solid fa-paperclip icon_color"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical icon_color"></i>
+                            <!-- riga notifiche -->
+                            <div class="row">
+                                <div class="col-12 bg_blue" id="">
+                                    <div class="d-flex align-items-center altezza_big">
+                                        <i class="fa-solid fa-bell-slash me-3"></i>
+
+                                        <div>
+                                            <div class="medium_text">Ricevi notifiche di nuovi messaggi</div>
+                                            <div class="small_text underline">Attiva notifiche desktop</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- riga search -->
+                            <div class="row ">
+                                <div class="col-12 bg_lightgrey">
+                                    <div class="d-flex align-items-center" id="altezza_search">
+
+                                        <!-- icona search -->
+                                        <i class="fa-solid fa-magnifying-glass icon_color pe-3 ps-1"></i>
+
+                                        <!-- input search -->
+                                        <input type="text" class="input" id="input_prew" placeholder="Cerca o inizia una nuova chat">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- colonna prew chat -->
+                            <div class="row label_chat">
+                                <div class="col-10 ">
+                                    <div class="d-flex align-items-center altezza_big">
+                                        <img class="img_avatar" src="img/avatar_2.jpg" alt="" class="avatar">
+                                        <div class="ps-3">
+                                            <div class="medium_text">Michele</div>
+                                            <div class="small_text">Ultimo messaggio inviato</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <span class="small_text">12.00</span>
                                 </div>
                             </div>
                         </div>
 
-                        
-                        <div id="altezza_image_chat">
-                            <div class="d-flex justify-content-end">
-                                <div class="messaggio messaggio_inviato medium_text">ciaoooooooo </div>
+                        <!-- colonna chat  -->
+                        <div class="col-8 sidebar">
+                            <div class="row ">
+                                <div class="col-10 background_grey">
+                                    <div class="d-flex align-items-center altezza" >
+
+                                        <!-- avatar contatto -->
+                                        <img class="img_avatar" src="img/avatar_2.jpg" alt="" class="avatar">
+                                        <div class="ps-3">
+
+                                            <!-- nome contatto -->
+                                            <div class="medium_text">Michele</div>
+
+                                            <!-- ultimo accesso -->
+                                            <div class="small_text">Ultimo oggi alle 12.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- comandi contatto -->
+                                <div class="col-2 background_grey">
+                                    <div class="d-flex align-items-center altezza justify-content-around " >
+                                        <i class="fa-solid fa-magnifying-glass icon_color"></i>
+                                        <i class="fa-solid fa-paperclip icon_color"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical icon_color"></i>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="d-flex justify-content-start">
-                                <div class="messaggio messaggio_ricevuto medium_text">weilaaaaaa</div>
+                            <!-- messaggio inviato -->
+                            <div id="altezza_image_chat">
+                                <div class="d-flex justify-content-end">
+                                    <div class="messaggio messaggio_inviato medium_text">ciaoooooooo </div>
+                                </div>
+
+                                <!-- messaggio ricevuto -->
+                                <div class="d-flex justify-content-start">
+                                    <div class="messaggio messaggio_ricevuto medium_text">weilaaaaaa</div>
+                                </div>
+                                
                             </div>
                             
-                        </div>
-                        
-                        <div class="row ">
-                            <div class="col-1 background_grey">
-                                <div class="d-flex align-items-center justify-content-center altezza" >
-                                    <i class="fa-regular fa-face-smile icon_color"></i> 
-                                </div>
-                            </div>
+                            <div class="row ">
 
-                            <div class="col-10 background_grey">
-                                <div class="d-flex align-items-center justify-content-center  altezza" >
-                                    <input type="text" class="input" id="input_message" placeholder="Scrivi un messaggio">
+                                <!-- icona smile -->
+                                <div class="col-1 background_grey">
+                                    <div class="d-flex align-items-center justify-content-center altezza" >
+                                        <i class="fa-regular fa-face-smile icon_color"></i> 
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-1 background_grey">
-                                <div class="d-flex align-items-center justify-content-center  altezza" >
-                                    <i class="fa-solid fa-microphone icon_color"></i>
+
+                                <!-- input inserimento messaggio -->
+                                <div class="col-10 background_grey">
+                                    <div class="d-flex align-items-center justify-content-center  altezza" >
+                                        <input type="text" class="input" id="input_message" placeholder="Scrivi un messaggio">
+                                    </div>
+                                </div>
+                                
+                                <!-- input audio -->
+                                <div class="col-1 background_grey">
+                                    <div class="d-flex align-items-center justify-content-center  altezza" >
+                                        <i class="fa-solid fa-microphone icon_color"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
-            
-        </div>
 
-        <section id="sfondo">
-            <div id="background_green"></div>
-            <div id="background_grey"></div>
-        </section>
-    </main>
-        
+            <section id="sfondo">
+                <div id="background_green"></div>
+                <div id="background_grey"></div>
+            </section>
+        </main>
+    </div>    
         
 
     
