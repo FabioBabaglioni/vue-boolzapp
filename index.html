@@ -34,38 +34,54 @@
                     <div class="col-4 bg_green utenti">
 
                         <!-- riga info utente -->
-                        <div class="row altezza">
+                        <div class="row ">
+                            <!-- img e nome utente -->
                             <div class="col-9" id="utente">
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center altezza">
                                     <img class="img_avatar" src="img/avatar_1.jpg" alt="" class="avatar">
                                     <h3 id="name_utente">Fabio Babaglioni</h3>
                                 </div>
                             </div>
+
+                            <!-- azioni utente -->
                             <div class="col-3" id="utente">
-                                <div class="d-flex align-items-center justify-content-around">
-                                    <i class="fa-solid fa-circle-notch"></i>
-                                    <i class="fa-solid fa-message"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <div class="d-flex align-items-center justify-content-around altezza">
+                                    <i class="fa-solid fa-circle-notch icon_color"></i>
+                                    <i class="fa-solid fa-message icon_color"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical icon_color"></i>
                                 </div>
                             </div>
                         </div>
 
                         <!-- riga notifiche -->
-                        <div class="row altezza">
-                            <div class="col bg_blue" id="">
-                                <div class="d-flex">
-                                    <img src="" alt="" class="avatar">
-                                    <h3></h3>
+                        <div class="row">
+                            <div class="col-12 bg_blue" id="">
+                                <div class="d-flex align-items-center altezza">
+                                    <i class="fa-solid fa-bell-slash me-3"></i>
+                                    <div class="medium_text">Ricevi notifiche di nuovi messaggi</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- riga search -->
                         <div class="row ">
-                            <div class="col bg_lightgrey bg_blue " id="altezza_search">
-                                <div class="d-flex align-items-center">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                            <div class="col-12 bg_lightgrey">
+                                <div class="d-flex align-items-center" id="altezza_search">
+
+                                    <!-- icona search -->
+                                    <i class="fa-solid fa-magnifying-glass icon_color pe-3 ps-1"></i>
+
+                                    <!-- input search -->
+                                    <input type="text" class="Input" id="input_prew" placeholder="Cerca o inizia una nuova chat">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- colonna prew chat -->
+                        <div class="row ">
+                            <div class="col-12 bg_white ">
+                                <div class="d-flex align-items-center altezza label_chat">
+
                                 </div>
                             </div>
                         </div>

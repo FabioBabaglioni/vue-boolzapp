@@ -1,5 +1,15 @@
+/* forzature bootstrap */
+*{
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+
 /* classi colore sfondi */
-.bg_green{
+.bg_white{
     background-color: #ffffff;
     height: 96vh;
 }
@@ -15,6 +25,18 @@
 
 .bg_lightgrey{
     background-color: #f2f2f2;
+}
+
+/* icone */
+.icon_color{
+    color: #b1b1b1;
+}
+
+.fa-bell-slash{
+    background-color: #f2fbff;
+    border-radius: 50%;
+    padding: 8px;
+    color: #8edafc;
 }
 
 /* sfondo  */
@@ -34,6 +56,11 @@
     margin-top: -96vh;
 }
 
+/* testo */
+.medium_text{
+    font-size: .8rem;
+}
+
 /* sezione chat */
 
 #container_chat{
@@ -49,7 +76,7 @@
 }
 
 #name_utente{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .altezza{
@@ -62,5 +89,19 @@
 
 #altezza_search{
     height: 40px;
+}
+
+.Input{
+    border-radius: 40px;
+    border: solid 1px white;
+}
+
+#input_prew{
+    width: 85%;
+    font-size: .8rem;
+}
+
+.label_chat{
+    border-bottom: solid 1px lightgrey;
 }
 
