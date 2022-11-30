@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6{
     background-color: #f2f2f2;
 }
 
+.background_white{
+    background-color: white;
+}
+
 /* icone */
 .icon_color{
     color: #b1b1b1;
@@ -61,7 +65,19 @@ h1, h2, h3, h4, h5, h6{
     font-size: .8rem;
 }
 
+.small_text{
+    font-size: .5rem;
+}
+
 /* sezione chat */
+
+.utenti{
+    overflow-y: auto;
+}
+
+.underline{
+    text-decoration: underline;
+}
 
 #container_chat{
     width: 80vw;
@@ -89,6 +105,10 @@ h1, h2, h3, h4, h5, h6{
 
 #altezza_search{
     height: 40px;
+}
+
+.altezza_big{
+    height: 60px;
 }
 
 .Input{
