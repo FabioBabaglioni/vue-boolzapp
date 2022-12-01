@@ -155,11 +155,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .messaggio_inviato{
-    background-color: #d5f9ba;
-    align-content: flex-end;
+    justify-content: end;
 }
 
-.messaggio_ricevuto{
+.messaggio_inviato_color{
+    background-color: #d5f9ba;
+}
+
+.messaggio_ricevuto_color{
     background-color: #ffffff;
 }
 

@@ -183,7 +183,7 @@ const { createApp } = Vue
                     {
                         date: `today`,
                         message: this.newTask ,
-                        status: `received`
+                        status: `sent`
                     }, 
                  )
                   

@@ -131,16 +131,10 @@
 
                             <!-- messaggio inviato -->
                             <div id="altezza_image_chat">
-
                                 <!-- con questo v-for vado a richimare i contacts in posizione corrente, per poi collegare subito i messages. -->
-                                <div v-for="(contact, index) in contacts[itemCorrente].messages">
-                                    <div class="d-flex justify-content-end" >
-
-                                        <!-- vado a richimare i contact e poi entro nell'oggetto e richiamo i messaggi che verranno stampati nelle chat -->
-                                        <div class="messaggio messaggio_inviato medium_text">{{contact.message}}</div>
-                                    </div>
-                                        <!-- messaggio ricevuto -->
-                                        <div class="messaggio messaggio_ricevuto medium_text">Ok faccio tutto!</div>
+                                <div class="d-flex messaggio_ricevuto" :class="{messaggio_inviato: contact.status === `sent`}" v-for="(contact, index) in contacts[itemCorrente].messages">
+                                    <!-- vado a richimare i contact e poi entro nell'oggetto e richiamo i messaggi che verranno stampati nelle chat -->
+                                    <div class="medium_text messaggio" :class="{messaggio_inviato_color: contact.status === `sent`, messaggio_ricevuto_color: contact.status === `received` }" >{{contact.message}}</div>
                                 </div>
                                 
                             </div>
