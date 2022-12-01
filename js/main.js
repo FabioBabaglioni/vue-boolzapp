@@ -1,5 +1,7 @@
 const { createApp } = Vue
 
+const myTimeout = setTimeout( 1000);
+
   createApp({
     data() {
       return {
@@ -174,6 +176,10 @@ const { createApp } = Vue
 
     methods : {
 
+        timeOut(){
+            setTimeout(risposta, 1000)
+        },
+
         change_chat(index){
             this.itemCorrente = index
         },
@@ -185,9 +191,20 @@ const { createApp } = Vue
                         message: this.newTask ,
                         status: `sent`
                     }, 
+
+                    this.newTask = "",
+                
+                   this.timeOut(),
+
+                    {
+                        date: `today`,
+                        message: "ok perfetto" ,
+                        status: `received`
+                    }
+                   
                  )
                   
-                 this.newTask = ""
+                 
         } ,
         
         timeOut(){
