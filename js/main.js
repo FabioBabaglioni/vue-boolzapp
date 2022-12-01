@@ -176,8 +176,24 @@ const { createApp } = Vue
 
         change_chat(index){
             this.itemCorrente = index
+        },
+
+        addMessage(){
+            this.contacts[this.itemCorrente].messages.push(
+                    {
+                        date: `today`,
+                        message: this.newTask ,
+                        status: `received`
+                    },
+
+                    
+                 )
+                 this.newTask = ""
         }
 
     }
+
+    
+
     
   }).mount('#app')

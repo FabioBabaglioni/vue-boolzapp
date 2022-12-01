@@ -133,15 +133,17 @@
                             <div id="altezza_image_chat">
 
                                 <!-- con questo v-for vado a richimare i contacts in posizione corrente, per poi collegare subito i messages. -->
-                                <div class="d-flex justify-content-end" v-for="(contact, index) in contacts[itemCorrente].messages">
+                                <div class=" justify-content-end" v-for="(contact, index) in contacts[itemCorrente].messages">
 
                                     <!-- vado a richimare i contact e poi entro nell'oggetto e richiamo i messaggi che verranno stampati nelle chat -->
                                     <div class="messaggio messaggio_inviato medium_text">{{contact.message}}</div>
+
+                                    <div class="messaggio messaggio_ricevuto medium_text">Ok faccio tutto!</div>
                                 </div>
 
                                 <!-- messaggio ricevuto -->
                                 <div class="d-flex justify-content-start">
-                                    <div class="messaggio messaggio_ricevuto medium_text">Ok faccio tutto!</div>
+                                    
                                 </div>
                                 
                             </div>
@@ -158,14 +160,14 @@
                                 <!-- input inserimento messaggio -->
                                 <div class="col-10 background_grey">
                                     <div class="d-flex align-items-center justify-content-center  altezza" >
-                                        <input type="text" class="input" id="input_message" placeholder="Scrivi un messaggio">
+                                        <input type="text" class="input" id="input_message" placeholder="Scrivi un messaggio" v-model="newTask" @keyup.enter="addMessage">
                                     </div>
                                 </div>
                                 
                                 <!-- input audio -->
                                 <div class="col-1 background_grey">
                                     <div class="d-flex align-items-center justify-content-center  altezza" >
-                                        <i class="fa-solid fa-microphone icon_color"></i>
+                                        <i class="fa-solid fa-microphone icon_color" @click="addMessage"></i>
                                     </div>
                                 </div>
                             </div>
