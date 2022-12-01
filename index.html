@@ -80,7 +80,7 @@
                             </div>
 
                             <!-- colonna prew chat  con ciclo for per ciclare sull'array-->
-                            <div class="row label_chat" v-for="(contact, index) in contacts">
+                            <div class="row label_chat" v-for="(contact, index) in contacts" @click="change_chat(index)">
                                 <div class="col-10" >
                                     <div class="d-flex align-items-center altezza_big">
 
@@ -104,14 +104,14 @@
                         <div class="col-8 sidebar">
                             <div class="row ">
                                 <div class="col-10 background_grey">
-                                    <div class="d-flex align-items-center altezza" >
+                                    <div class="d-flex align-items-center altezza"  >
 
-                                        <!-- avatar contatto -->
-                                        <img class="img_avatar" src="img/avatar_2.jpg" alt="" class="avatar">
+                                        <!-- avatar contatto richiamato in base al click-->
+                                        <img class="img_avatar" :src=" `img/avatar` + contacts[itemCorrente].avatar + `.jpg`" alt="" class="avatar">
                                         <div class="ps-3">
 
-                                            <!-- nome contatto -->
-                                            <div class="medium_text">Michele</div>
+                                            <!-- nome contatto richiamato in base al click-->
+                                            <div class="medium_text">{{contacts[itemCorrente].name}}</div>
 
                                             <!-- ultimo accesso -->
                                             <div class="small_text">Ultimo oggi alle 12.00</div>

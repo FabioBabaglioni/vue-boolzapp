@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6{
     background-color: #eaeaea;
 }
 
+.background_grey_hover{
+    background-color: lightgrey;
+}
+
 /* icone */
 .icon_color{
     color: #b1b1b1;
@@ -157,5 +161,9 @@ h1, h2, h3, h4, h5, h6{
 
 .messaggio_ricevuto{
     background-color: #ffffff;
+}
+
+.label_chat:hover{
+    background-color: lightgrey;
 }
 

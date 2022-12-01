@@ -170,6 +170,14 @@ const { createApp } = Vue
         
 
       }
+    },
+
+    methods : {
+
+        change_chat(index){
+            this.itemCorrente = index
+        }
+
     }
     
   }).mount('#app')
