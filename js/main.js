@@ -194,21 +194,16 @@ const myTimeout = setTimeout( 1000);
 
                     this.newTask = "",
                 
-                   this.timeOut(),
-
-                    {
-                        date: `today`,
-                        message: "ok perfetto" ,
-                        status: `received`
-                    }
-                   
-                 )
                   
-                 
-        } ,
-        
-        timeOut(){
-            setTimeout(risposta)
+                    setTimeout(
+                        {
+                            date: `today`,
+                            message: "ok perfetto" ,
+                            status: `received`
+                        }, 
+                        1000
+                    ),
+                 )
         }
     },
     
