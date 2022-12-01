@@ -188,11 +188,11 @@ const { createApp } = Vue
                  )
                   
                  this.newTask = ""
+        } ,
+        
+        timeOut(){
+            setTimeout(risposta)
         }
-
-    }
-
-    
-
+    },
     
   }).mount('#app')
