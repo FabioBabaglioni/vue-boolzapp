@@ -79,12 +79,16 @@
                                 </div>
                             </div>
 
-                            <!-- colonna prew chat -->
+                            <!-- colonna prew chat  con ciclo for per ciclare sull'array-->
                             <div class="row label_chat" v-for="(contact, index) in contacts">
-                                <div class="col-10 ">
+                                <div class="col-10" >
                                     <div class="d-flex align-items-center altezza_big">
-                                        <img class="img_avatar" src="img/avatar_2.jpg" alt="" class="avatar">
+
+                                        <!-- richiamo il numero dell'avatar corrispondente -->
+                                        <img class="img_avatar" :src=" `img/avatar` + contact.avatar + `.jpg`" alt="" class="avatar">
                                         <div class="ps-3">
+
+                                            <!-- richiamo il nome del contatto -->
                                             <div class="medium_text">{{contact.name}}</div>
                                             <div class="small_text">Ultimo messaggio inviato</div>
                                         </div>
