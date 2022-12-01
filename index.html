@@ -80,12 +80,12 @@
                             </div>
 
                             <!-- colonna prew chat -->
-                            <div class="row label_chat">
+                            <div class="row label_chat" v-for="(contact, index) in contacts">
                                 <div class="col-10 ">
                                     <div class="d-flex align-items-center altezza_big">
                                         <img class="img_avatar" src="img/avatar_2.jpg" alt="" class="avatar">
                                         <div class="ps-3">
-                                            <div class="medium_text">Michele</div>
+                                            <div class="medium_text">{{contact.name}}</div>
                                             <div class="small_text">Ultimo messaggio inviato</div>
                                         </div>
                                     </div>
@@ -185,7 +185,7 @@
 
 
 
-    <script src="js/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
