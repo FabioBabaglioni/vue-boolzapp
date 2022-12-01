@@ -131,13 +131,13 @@
 
                             <!-- messaggio inviato -->
                             <div id="altezza_image_chat">
-                                <div class="d-flex justify-content-end">
-                                    <div class="messaggio messaggio_inviato medium_text">ciaoooooooo </div>
+                                <div class="d-flex justify-content-end" v-for="(data, index) in messages">
+                                    <div class="messaggio messaggio_inviato medium_text">{{contacts[0].messages[0].data.message}}</div>
                                 </div>
 
                                 <!-- messaggio ricevuto -->
                                 <div class="d-flex justify-content-start">
-                                    <div class="messaggio messaggio_ricevuto medium_text">weilaaaaaa</div>
+                                    <div class="messaggio messaggio_ricevuto medium_text">Ok faccio tutto!</div>
                                 </div>
                                 
                             </div>
