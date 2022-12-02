@@ -74,29 +74,27 @@
                                         <i class="fa-solid fa-magnifying-glass icon_color pe-3 ps-1"></i>
 
                                         <!-- input search -->
-                                        <input type="text" class="input" id="input_prew" placeholder="Cerca o inizia una nuova chat" v-model="searchContact" @keyup="ricercaContatto">
+                                        <input type="text" class="input" id="input_prew" placeholder="Cerca o inizia una nuova chat" v-model="ricercaContatto" @keyup="searchContact">
                                     </div>
                                 </div>
                             </div>
 
                             <!-- colonna prew chat  con ciclo for per ciclare sull'array-->
-                            <div class="contatti row label_chat" v-for="(contact, index) in contacts" v-show="visible = true" @click="change_chat(index)">
-                                <div class="col-10 " >
-                                    <div class="d-flex align-items-center altezza_big">
+                            <div class="contatti row label_chat" v-for="(contact, index) in contacts"  @click="change_chat(index)">
+                                <div class="col-12 " >
+                                    <div class="flex altezza_big" :class="contact.visible ? `` : `none`" v-if="searchContact(index)">
 
                                         <!-- richiamo il numero dell'avatar corrispondente -->
                                         <img class="img_avatar" :src=" `img/avatar` + contact.avatar + `.jpg`" alt="" class="avatar">
                                         <div class="ps-3">
-
                                             <!-- richiamo il nome del contatto -->
                                             <div class="medium_text">{{contact.name}}</div>
                                             <div class="small_text">Ultimo messaggio inviato</div>
                                         </div>
+                                        <span class="small_text">12.00</span>
                                     </div>
                                 </div>
-                                <div class="col-2">
-                                    <span class="small_text">12.00</span>
-                                </div>
+                
                             </div>
                         </div>
 

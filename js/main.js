@@ -4,6 +4,7 @@ const { createApp } = Vue
     data() {
       return {
         itemCorrente : 0,
+        ricercaContatto : "",
         contacts: [
             {
                 name: 'Michele',
@@ -202,19 +203,21 @@ const { createApp } = Vue
             )
         },
 
-        // barra di ricerca laterale
-        searchContact(){
-            for(let i = 0; i < contacts.lenght; i++){
-                if(this.contacts.name[i].includes(this.ricercaContatto))
-                    {
-                    visible = true
-                }else{
-                    visible = false
-                }
+        searchContact(Utente){
+
+            nome = this.contacts[Utente].name.toLowerCase();
+
+            if (nome.includes(this.ricercaContatto)) {
+                return true;
+            } else {
+                return false;
             }
+
         }
+
+
             
         
-    },
+    }
      
   }).mount('#app');
