@@ -204,16 +204,17 @@ const { createApp } = Vue
 
         // barra di ricerca laterale
         searchContact(){
-            
+            for(let i = 0; i > contacts.lenght; i++){
+                if(this.contacts.name[i].includes(this.ricercaContatto))
+                    {
+                    visible = true
+                }else{
+                    visible = false
+                }
+            }
         }
-        // prendere l'input che scrive l'utente 
-
-        // confrontarlo se esiste nell'array di oggetti che mi scrive i nomi
-
-        // far comparire i nomi che contengono quelle lettere v-show
-        
             
         
     },
-    
+     
   }).mount('#app');
