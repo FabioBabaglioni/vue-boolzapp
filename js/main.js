@@ -165,7 +165,7 @@ const { createApp } = Vue
                         status: 'received'
                     }
                 ],
-            }
+            },
         ]
         
 
@@ -187,16 +187,22 @@ const { createApp } = Vue
                     }, 
 
                     this.newTask = "",
-                
-                    setTimeout(
-                        {
-                            date: `today`,
-                            message: "ok perfetto",
-                            status: `received`
-                        }, 1000),
 
+                    setTimeout(this.ReceivedMesage, 1000)
                 );
+        },
+
+        ReceivedMesage(){
+            this.contacts[this.itemCorrente].messages.push(
+                    {
+                        date: `today`,
+                        message: "weila" ,
+                        status: `received`
+                    }, 
+            )
         }
+            
+        
     },
     
   }).mount('#app');
