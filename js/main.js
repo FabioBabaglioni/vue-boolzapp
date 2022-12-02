@@ -200,7 +200,18 @@ const { createApp } = Vue
                         status: `received`
                     }, 
             )
+        },
+
+        // barra di ricerca laterale
+        searchContact(){
+            
         }
+        // prendere l'input che scrive l'utente 
+
+        // confrontarlo se esiste nell'array di oggetti che mi scrive i nomi
+
+        // far comparire i nomi che contengono quelle lettere v-show
+        
             
         
     },

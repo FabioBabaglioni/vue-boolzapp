@@ -74,13 +74,13 @@
                                         <i class="fa-solid fa-magnifying-glass icon_color pe-3 ps-1"></i>
 
                                         <!-- input search -->
-                                        <input type="text" class="input" id="input_prew" placeholder="Cerca o inizia una nuova chat">
+                                        <input type="text" class="input" id="input_prew" placeholder="Cerca o inizia una nuova chat" v-model="searchContact">
                                     </div>
                                 </div>
                             </div>
 
                             <!-- colonna prew chat  con ciclo for per ciclare sull'array-->
-                            <div class="contatti row label_chat" v-for="(contact, index) in contacts" @click="change_chat(index)">
+                            <div class="contatti row label_chat" v-for="(contact, index) in contacts" @click="change_chat(index)" v-show="research = true ">
                                 <div class="col-10 " >
                                     <div class="d-flex align-items-center altezza_big">
 
