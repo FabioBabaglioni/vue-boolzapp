@@ -80,7 +80,7 @@
                             </div>
 
                             <!-- colonna prew chat  con ciclo for per ciclare sull'array-->
-                            <div class="contatti row label_chat" v-for="(contact, index) in contacts" @click="change_chat(index)">
+                            <div class="contatti row label_chat" v-for="(contact, index) in contacts" v-show="visible = true" @click="change_chat(index)">
                                 <div class="col-10 " >
                                     <div class="d-flex align-items-center altezza_big">
 

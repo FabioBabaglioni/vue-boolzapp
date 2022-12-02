@@ -204,7 +204,7 @@ const { createApp } = Vue
 
         // barra di ricerca laterale
         searchContact(){
-            for(let i = 0; i > contacts.lenght; i++){
+            for(let i = 0; i < contacts.lenght; i++){
                 if(this.contacts.name[i].includes(this.ricercaContatto))
                     {
                     visible = true
